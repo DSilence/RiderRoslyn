@@ -1,11 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net45</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="JetBrains.ReSharper.SDK" Version="2017.1.20170613.162448" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Analyzers\" />
+    <Folder Include="Zones" />
   </ItemGroup>
+  <PropertyGroup>
+    <HostFullIdentifier>ReSharperPlatformVs15Plugins</HostFullIdentifier>
+  </PropertyGroup>
 </Project>

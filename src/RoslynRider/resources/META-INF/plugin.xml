@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <name>Roslyn language service</name>
   <version>1.0</version>
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
@@ -26,6 +26,12 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <localInspection shortName="RoslynInspection"
+                     groupName="Roslyn"
+                     displayName="Roslyn Inspection"
+                     enabledByDefault="true"
+                     implementationClass="com.roslyn.RoslynInspection"
+    language="CSharp"/>
   </extensions>
 
   <actions>

@@ -3,21 +3,22 @@ using JetBrains.Application.Settings;
 using JetBrains.ReSharper.Feature.Services.Daemon;
 using JetBrains.ReSharper.Psi;
 
-namespace RoslynResharper.Daemon
+namespace RoslynResharper.Service
 {
     [DaemonStage]
-    public class RoslinDaemon : IDaemonStage
+    public class RoslynDaemonStage : IDaemonStage 
     {
         public IEnumerable<IDaemonStageProcess> CreateProcess(IDaemonProcess process, IContextBoundSettingsStore settings, DaemonProcessKind processKind)
         {
-            throw new System.NotImplementedException();
+            return new IDaemonStageProcess[]
+            {
+                new RoslynDaemonStageProcess(process)
+            };
         }
 
         public ErrorStripeRequest NeedsErrorStripe(IPsiSourceFile sourceFile, IContextBoundSettingsStore settingsStore)
         {
-
-            throw new System.NotImplementedException();
+            return ErrorStripeRequest.STRIPE_AND_ERRORS;
         }
-
     }
 }

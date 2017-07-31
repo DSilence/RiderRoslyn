@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>com.roslin.resharper</id>
+    <description>Roslyn for Rider</description>
+    <authors>DSilence</authors>
+    <version>1.0.0.0</version>
+    <title>Roslyn ReSharper plugin</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="Wave" version="[8.0, 10.0)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\net45\RoslynResharper.dll" target="DotFiles" />
+  </files>
+</package>

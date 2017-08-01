@@ -343,3 +343,5 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/src/RoslynRider/.gradle/
+/src/RoslynRider/build

@@ -21,17 +21,25 @@
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.rider</depends>
   -->
+  <depends>com.intellij.modules.rider</depends>
+
+  <project-components>
+    <component>
+      <implementation-class>com.roslyn.RoslynClientComponent</implementation-class>
+    </component>
+  </project-components>
 
   <extensions defaultExtensionNs="com.intellij">
+
     <!-- Add your extensions here -->
     <localInspection shortName="RoslynInspection"
                      groupName="Roslyn"
                      displayName="Roslyn Inspection"
                      enabledByDefault="true"
                      implementationClass="com.roslyn.RoslynInspection"
-    language="CSharp"/>
+                     language="C#" groupPath="C#" />
   </extensions>
 
   <actions>

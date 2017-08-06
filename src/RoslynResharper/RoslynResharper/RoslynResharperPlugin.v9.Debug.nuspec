@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <id>com.roslyWn.resharper</id>
+    <id>com.roslyn.resharper</id>
     <description>Roslyn for Rider</description>
     <authors>DSilence</authors>
     <version>1.0.0.0</version>
@@ -12,7 +12,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\RoslynResharper.dll" target="DotFiles" />
-    <file src="bin\Release\RoslynResharper.pdb" target="DotFiles" />
+    <file src="bin\Debug\RoslynResharper.dll" target="DotFiles" />
+    <file src="bin\Debug\RoslynResharper.pdb" target="DotFiles" />
   </files>
 </package>
